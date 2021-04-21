@@ -1,0 +1,27 @@
+{
+  "name": "streamingservice",
+  "version": "1.0.0",
+  "description": "Node API React",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/kavunolegs/react_streaming_service.git"
+  },
+  "keywords": [
+    "Node",
+    "API",
+    "React"
+  ],
+  "author": " <Oleh Kavun>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kavunolegs/react_streaming_service/issues"
+  },
+  "homepage": "https://gitlab.com/kavunolegs/react_streaming_service#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
