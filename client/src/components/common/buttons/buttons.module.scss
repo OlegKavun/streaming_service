@@ -1,0 +1,34 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  margin: 0;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: 2px solid white;
+  background: $service_button_color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: lighten($service_button_color, 5%);
+  }
+
+  &:active {
+    background-color: darken($service_button_color, 15%);
+  }
+
+  &__icon {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+}

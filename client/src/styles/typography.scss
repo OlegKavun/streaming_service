@@ -1,0 +1,17 @@
+$main-font-family: 'Noto Sans JP';
+
+$font-bold: 700;
+$font-normal: 400;
+$font-light: 300;
+
+@mixin font-face($font-family, $file-path, $weight) {
+  @font-face {
+    font-family: $font-family;
+    src: url($file-path) format('opentype');
+    font-weight: $weight;
+  }
+}
+
+@include font-face($main-font-family, '../assets/fonts/Noto_Sans_JP/NotoSansJP-Regular.otf', $font-normal);
+@include font-face($main-font-family, '../assets/fonts/Noto_Sans_JP/NotoSansJP-Light.otf', $font-light);
+@include font-face($main-font-family, '../assets/fonts/Noto_Sans_JP/NotoSansJP-Bold.otf', $font-bold);

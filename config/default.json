@@ -1,0 +1,4 @@
+{
+    "PORT":5000,
+    "MongoURL": "mongodb+srv://oleg:12345@cluster0.ohf6b.mongodb.net/streaming_service?retryWrites=true&w=majority"
+}

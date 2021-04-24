@@ -1,0 +1,8 @@
+@import './styles/variables.scss';
+@import './styles/typography.scss';
+
+body {
+  background-color: $bg-main;
+  margin: 0;
+  font-family: $main-font-family, sans-serif;
+}
