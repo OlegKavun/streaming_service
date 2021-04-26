@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import logo from '../../assets/images/logo2.png'
 import s from './Header.module.scss'
 import signin_icon from '../../assets/images/signIn_icon.png'
@@ -9,7 +9,7 @@ import { Link, useLocation } from 'react-router-dom'
 const Header = () => {
   let location = useLocation()
 
-  const checkAuthLocation = (location) => location == '/register' || location ==  '/login'
+  const checkAuthLocation = (location) => location === '/register' || location ===  '/login'
   const setHeaderBtns = () => {
     return <ServiceButton text="Sign In" icon={signin_icon} path="/login"/>
   }
@@ -18,7 +18,7 @@ const Header = () => {
   return (
       <header className={s.header}>
         <Link to="/home">
-          <img src={logo} className={s.header__logo} alt="logo" />
+          <img src={logo} alt="company-logo" className={s.header__logo} />
         </Link>
         <div className={s.header__menu}>
           {!checkAuthLocation(location.pathname) && setHeaderBtns()}
